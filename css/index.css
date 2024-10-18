@@ -1,0 +1,266 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    position: relative; 
+}
+
+.header {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1;
+    background: linear-gradient(
+        to bottom, 
+        rgba(131, 21, 21, 1), 
+        rgba(235, 166, 17, 1)
+    );
+    height: 100vh; 
+    position: relative;
+}
+
+.logo {
+    position: relative;
+    top: 20px;
+    transform: translateX(-50%);
+    max-width: 150px;
+    border-radius: 50%;
+    left: 80px;
+}
+
+
+.header h1 {
+    text-align: center; 
+    color: black; 
+    margin-top: 90px; 
+    font-size: 32px;
+}
+
+.header ul {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+}
+
+.header ul li {
+    display: inline-block; 
+    margin: 0 90px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: black; 
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.header ul li a:hover {
+    color: red;
+}
+
+#horizontal-line {
+    width: 100%; 
+    height: 2px;
+    background-color: black; 
+    margin: 5px auto; 
+}
+
+h2 {
+    text-align: center;
+    color: black;
+    margin: 20px 0; 
+}
+
+p {
+    text-align: left; 
+    color: black;
+    max-width: 50%; 
+    margin: 20px 900px 0 0; 
+    font-size: larger; 
+    position: relative; 
+    margin-left: 350px;
+    width: 50%;
+}
+
+.video-container {
+    position: absolute; 
+    top: 20px; 
+    right: 20px; 
+    z-index: 2; 
+    max-width: 100%; 
+    margin: 500px 90px 0 0; 
+}
+
+video { 
+    max-width: 100%; 
+    height: auto; 
+}
+
+footer {
+    background: linear-gradient(
+        to bottom,
+        rgba(235, 166, 17, 1),
+        rgba(131, 21, 21, 1) 
+    ); 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+    position: relative;
+    margin-top: 0;
+}
+
+.footer-content p {
+    margin-bottom: 10px; 
+    text-align: center;
+    
+}
+
+ul.socials {
+    list-style: none; 
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+ul.socials li {
+    margin: 0 20px;
+    position: relative; 
+    margin-top: 50px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    text-decoration: none; 
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: red;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 4px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: none;
+    background-color: none;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+    .header ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        align-items: flex-start;
+        justify-content: left;
+        text-align: left;
+        background: white;
+    }
+
+    .menu li a {
+        padding-left: 20px;
+    }
+
+    .video-container {
+        position: relative; 
+        margin: 20px auto; 
+        top: auto; 
+        right: auto; 
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: auto; 
+        padding: 20px 0; 
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header ul li {
+        margin: 0 20px;
+    }
+
+    p {
+        max-width: 90%; 
+        margin: 10px auto; 
+    }
+
+    .video-container {
+        margin: 20px auto; 
+        max-width: 90%; 
+    }
+
+    video {
+        max-width: 100%; 
+        height: auto; 
+    }
+}

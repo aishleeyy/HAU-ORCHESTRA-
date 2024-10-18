@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 150px;
+    border-radius: 50%;
+    margin: 0;
+    z-index: 10;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(131, 21, 21, 1), rgba(235, 166, 17, 1));
+    padding: 100px 20px 20px;
+    color: white;
+    width: 100%;
+    position: relative;
+}
+
+.header h1 {
+    margin-top: 65px;
+    font-size: 32px;
+    color: black;
+}
+
+.header ul {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.header ul li {
+    display: inline-block;
+    margin: 0 90px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.header ul li a:hover {
+    color: red;
+}
+
+#horizontal-line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 5px auto;
+}
+
+.header-image {
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+    object-fit: cover;
+    margin: 5px auto;
+    border-radius: 10px;
+    display: block;
+}
+
+h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.contact-info li strong {
+    font-weight: 600;
+    color: black;
+}
+
+.contact-info li:hover {
+    color: #f4f4f4;
+}
+.footer-content {
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(235, 166, 17, 1), rgba(131, 21, 21, 1));
+    padding: 20px 0;
+    color: white;
+}
+
+ul.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+ul.socials li {
+    margin: 0 15px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+}
+
+.social-icon:hover {
+    color: red;
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.hamburger span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 4px 0;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.menu {
+    display: none;
+    background-color: none;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+    background-color: transparent;
+}
+
+@media (max-width: 1024px) {
+    .header ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        align-items: flex-start;
+        justify-content: left;
+        text-align: left;
+        background:white;
+    }
+
+    .menu li a {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header ul li {
+        margin: 0 40px;
+    }
+
+    .header-image {
+        height: 300px;
+    }
+    
+    
+    
+
+    .contact-info li {
+        font-size: 16px;
+        flex-direction: row;
+        text-align: center; 
+        display: flex;
+    }
+
+    .menu li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+body{
+    background-color: linear-gradient(to bottom, rgba(131, 21, 21, 1), rgba(235, 166, 17, 1));
+}
+
+

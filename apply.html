@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Application Form</title>
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/apply.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMUMdG5z03EE1I0M6gA56O/xiEu7Ew5k/q8pQZ" crossorigin="anonymous">
+    </head>
+    
+<body>
+    <div class="header">
+        <h1>HAU ORCHESTRA</h1> 
+        <nav class="nav-list">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="apply.html">APPLY NOW</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu" id="menu">
+             <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="apply.html">APPLY NOW</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+             </ul>
+         </div>
+        <div id="horizontal-line"></div>
+    <div class="container">
+        <h1>Application Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Student Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Student Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+            <div class="form-group">
+                <label for="course">Select Department:</label>
+                <select id="course" name="course" required>
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="SOC">School of Computing</option>
+                    <option value="SBA">School of Business and Accountancy</option>
+                    <option value="SEA">School of Engineering and Architecture</option>
+                    <option value="SNAMS">School of Nursing and Allied Medical Sciences</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any additional information"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/aishleybndln/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/Singketttt/" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://github.com/aishleeyy" target="_blank" class="social-icon"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <p>@Aishley Bundalian 2024</p>
+        </div>
+    </footer>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
